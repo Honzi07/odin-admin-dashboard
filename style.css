@@ -41,7 +41,7 @@ ul {
   gap: 15px;
 }
 
-li > a {
+a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -197,4 +197,17 @@ section > div {
     #fee5eb 10px,
     #ffffff 10px,
     #ffffff);
+}
+
+.projects p {
+    color: #636363;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-icons > a {
+    margin-right: 10px;
 }
