@@ -30,7 +30,7 @@ main {
   background-color: #e2e8f0;
 }
 
-h2, h3, h4 {
+h2, h3, .announcement-title  {
     margin: 0;
 }
 
@@ -166,17 +166,18 @@ main {
     display: grid;
     grid-template-columns: 4fr minmax(200px, 1fr);
     grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
+    gap: 20px;
 }
 
 main h2, main h3 {
+    font-size: 1.17rem;
     margin-bottom: -10px;
 }
 
 section > div {
     background-color: #ffffff;
     border-radius: 7px;
-    padding: 40px 30px;
+    padding: 30px 30px;
 }
 
 .projects {
@@ -192,22 +193,43 @@ section > div {
 }
 
 .projects > div {
+    display: grid;
+    grid-template-rows: min-content;
     background: linear-gradient(
     to right, 
-    #fee5eb 10px,
+    #F0B429 10px,
     #ffffff 10px,
     #ffffff);
 }
 
-.projects p {
+main p {
     color: #636363;
 }
 
 .project-icons {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .project-icons > a {
     margin-right: 10px;
 }
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
+    gap: 20px;
+}
+
+.announcements h4 {
+    margin-bottom: -10px;
+}
+
+.h-line {
+    background-color: #e2e8f0;
+    height: 2px;
+}
+
