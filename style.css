@@ -6,10 +6,10 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) 3fr;
+  grid-template-columns: auto 3fr;
   grid-template-rows: auto 1fr;
   background-color: #e2e8f0;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 aside {
@@ -30,7 +30,7 @@ header {
 }
 
 main {
-    padding: 10px 20px;
+    padding: 0 20px;
     display: grid;
     grid-template-columns: 4fr minmax(200px, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -241,6 +241,10 @@ main p {
     margin-bottom: -10px;
 }
 
+.announcements p {
+    font-size: 0.75rem;
+}
+
 .h-line {
     background-color: #e2e8f0;
     height: 2px;
@@ -256,5 +260,9 @@ main p {
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.trending span {
+    color: #000000;
 }
 
